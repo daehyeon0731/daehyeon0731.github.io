@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="ko" data-astro-cid-hkbrpulz><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>블로그 구축 — 툰엔진 연구 기록을 남길 공간 · Daehyeon</title><meta name="description" content="툰엔진을 새로 만들기 전에, 매 커밋의 의사결정을 기록할 블로그부터 세웠다."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="https://daehyeon0731.github.io/devlog/2026-11-24-blog-setup/"><meta property="og:title" content="블로그 구축 — 툰엔진 연구 기록을 남길 공간 · Daehyeon"><meta property="og:description" content="툰엔진을 새로 만들기 전에, 매 커밋의 의사결정을 기록할 블로그부터 세웠다."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Gowun+Batang:wght@400;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet"><script>
+      try {
+        const t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CAIx8mWQ.css"><style>.prose[data-astro-cid-h3xj43oc]{margin-top:32px}.prose[data-astro-cid-h3xj43oc] h2{margin-top:2em;font-size:28px}.prose[data-astro-cid-h3xj43oc] h3{font-size:22px}.prose[data-astro-cid-h3xj43oc] pre{border:1px solid var(--line);border-radius:12px;padding:18px 20px;line-height:1.6;overflow-x:auto}.prose[data-astro-cid-h3xj43oc] :not(pre)>code{background:color-mix(in srgb, var(--ochre) 18%, transparent);border-radius:6px;padding:2px 6px}.prose[data-astro-cid-h3xj43oc] blockquote{border-left:3px solid var(--rose);color:var(--ink-soft);margin:1.5em 0;padding:4px 20px}.prose[data-astro-cid-h3xj43oc] img,.prose[data-astro-cid-h3xj43oc] video{border-radius:12px;margin:1.5em 0}.prose[data-astro-cid-h3xj43oc] strong{background:linear-gradient(transparent 60%, color-mix(in srgb, var(--rose) 25%, transparent) 60%)}.prose[data-astro-cid-h3xj43oc] .wikilink{border-bottom:1px solid color-mix(in srgb, var(--indigo) 45%, transparent);color:var(--indigo);text-decoration:none}.prose[data-astro-cid-h3xj43oc] .wikilink:hover{border-bottom-color:var(--indigo)}.prose[data-astro-cid-h3xj43oc] .wikilink.missing{color:var(--ink-faint);border-bottom:1px dashed var(--line);cursor:help;font-style:normal}
+article[data-astro-cid-go7qa7uw]{max-width:780px}.back[data-astro-cid-go7qa7uw]{color:var(--ink-soft);margin:48px 0 24px;font-size:14px;text-decoration:none;display:inline-block}h1[data-astro-cid-go7qa7uw]{font-size:clamp(30px,5vw,44px);font-family:"Gowun Batang", var(--font-display);margin:8px 0 12px;font-weight:700}.summary[data-astro-cid-go7qa7uw]{color:var(--ink-soft);margin:0;font-size:18px}.toc[data-astro-cid-go7qa7uw]{border:1px solid var(--line);background:var(--card);border-radius:12px;margin:32px 0 0;padding:18px 22px}.toc[data-astro-cid-go7qa7uw] ul[data-astro-cid-go7qa7uw]{margin:8px 0 0;padding:0;list-style:none}.toc[data-astro-cid-go7qa7uw] li[data-astro-cid-go7qa7uw].step{padding-left:18px}.toc[data-astro-cid-go7qa7uw] li[data-astro-cid-go7qa7uw]:not(.step)>a[data-astro-cid-go7qa7uw]{color:var(--ink);font-weight:500}.toc[data-astro-cid-go7qa7uw] a[data-astro-cid-go7qa7uw]{color:var(--ink-soft);font-size:15px;text-decoration:none}.toc[data-astro-cid-go7qa7uw] a[data-astro-cid-go7qa7uw]:hover{color:var(--rose)}.log[data-astro-cid-go7qa7uw] h2{border-top:1px dashed var(--line);padding-top:28px;scroll-margin-top:80px}.log[data-astro-cid-go7qa7uw] h3{margin-top:2em;scroll-margin-top:80px}.log[data-astro-cid-go7qa7uw] p>strong:first-child{font-family:var(--font-mono);letter-spacing:.04em;color:var(--rose);background:0 0;margin-top:8px;font-size:13px;display:block}.log[data-astro-cid-go7qa7uw] table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px;display:block;overflow-x:auto}.log[data-astro-cid-go7qa7uw] th,.log[data-astro-cid-go7qa7uw] td{text-align:left;border-bottom:1px solid var(--line);padding:8px 12px}.log[data-astro-cid-go7qa7uw] th{color:var(--ink-faint);font-weight:500}
+</style></head><body data-astro-cid-hkbrpulz><!-- Shared SVG filter: turbulence-displaced blur + darkened rim, used by work cards --><svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="wc-bleed" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="4" seed="3" result="warp"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="warp" scale="38" xChannelSelector="R" yChannelSelector="G" result="ragged"></feDisplacementMap><feGaussianBlur in="ragged" stdDeviation="2.2" result="soft"></feGaussianBlur><feMorphology in="soft" operator="erode" radius="3" result="inner"></feMorphology><feComposite in="soft" in2="inner" operator="out" result="rim"></feComposite><feComponentTransfer in="rim" result="rimDark"><feFuncA type="linear" slope="0.9"></feFuncA></feComponentTransfer><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="8" result="grain"></feTurbulence><feComposite in="soft" in2="grain" operator="arithmetic" k1="0.55" k2="0.6" result="granulated"></feComposite><feMerge><feMergeNode in="granulated"></feMergeNode><feMergeNode in="rimDark"></feMergeNode></feMerge></filter></svg><header class="site-header" data-astro-cid-hkbrpulz><div class="container bar" data-astro-cid-hkbrpulz><a href="/" class="logo" aria-label="홈" data-astro-cid-hkbrpulz><span class="dot d1" data-astro-cid-hkbrpulz></span><span class="dot d2" data-astro-cid-hkbrpulz></span><span class="name" data-astro-cid-hkbrpulz>Daehyeon</span></a><nav data-astro-cid-hkbrpulz><a href="/works/" data-astro-cid-hkbrpulz>Works</a><a href="/blog/" data-astro-cid-hkbrpulz>Blog</a><a href="/devlog/" class="active" data-astro-cid-hkbrpulz>Devlog</a><a href="/graph/" data-astro-cid-hkbrpulz>Graph</a><a href="/about/" data-astro-cid-hkbrpulz>About</a><button id="theme-toggle" type="button" aria-label="테마 전환" data-astro-cid-hkbrpulz><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" data-astro-cid-hkbrpulz><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6" data-astro-cid-hkbrpulz></circle><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" data-astro-cid-hkbrpulz></path></svg></button></nav></div></header><main data-astro-cid-hkbrpulz><article class="container" data-astro-cid-go7qa7uw><a href="/devlog/" class="back" data-astro-cid-go7qa7uw>← Devlog</a><p class="eyebrow" data-astro-cid-go7qa7uw>2026.11.24 · Blog</p><h1 data-astro-cid-go7qa7uw>블로그 구축 — 툰엔진 연구 기록을 남길 공간</h1><p class="summary" data-astro-cid-go7qa7uw>툰엔진을 새로 만들기 전에, 매 커밋의 의사결정을 기록할 블로그부터 세웠다.</p><nav class="toc" aria-label="커밋 목록" data-astro-cid-go7qa7uw><p class="eyebrow" data-astro-cid-go7qa7uw>Commits</p><ul data-astro-cid-go7qa7uw><li data-astro-cid-go7qa7uw><a href="#커밋-1--블로그-구축" data-astro-cid-go7qa7uw>커밋 1 — 블로그 구축</a></li><li class="step" data-astro-cid-go7qa7uw><a href="#1단계--astro-프로젝트-초기화-레이아웃과-디자인-토큰" data-astro-cid-go7qa7uw>1단계 — Astro 프로젝트 초기화, 레이아웃과 디자인 토큰</a></li><li class="step" data-astro-cid-go7qa7uw><a href="#2단계--실시간-수채화-셰이더-히어로" data-astro-cid-go7qa7uw>2단계 — 실시간 수채화 셰이더 히어로</a></li><li class="step" data-astro-cid-go7qa7uw><a href="#3단계--포트폴리오--블로그-콘텐츠-구조" data-astro-cid-go7qa7uw>3단계 — 포트폴리오 · 블로그 콘텐츠 구조</a></li><li class="step" data-astro-cid-go7qa7uw><a href="#4단계--devlog-섹션" data-astro-cid-go7qa7uw>4단계 — Devlog 섹션</a></li><li class="step" data-astro-cid-go7qa7uw><a href="#5단계--github-actions-배포-줄바꿈-통일" data-astro-cid-go7qa7uw>5단계 — GitHub Actions 배포, 줄바꿈 통일</a></li><li data-astro-cid-go7qa7uw><a href="#커밋-2--소스-비공개-결과물만-공개-배포" data-astro-cid-go7qa7uw>커밋 2 — 소스 비공개, 결과물만 공개 배포</a></li></ul></nav><div class="prose" data-astro-cid-h3xj43oc><div class="log" data-astro-cid-go7qa7uw><p>툰엔진을 처음부터 다시 만들기로 했다. 그 과정의 모든 결정과 이유를 커밋 단위로 남기기 위해, 먼저 기록할 공간을 만든다.</p>
+<h2 id="커밋-1--블로그-구축">커밋 1 — 블로그 구축</h2>
+<p>하루 작업을 한 커밋으로 묶었다. 작업은 아래 다섯 단계로 진행했다.</p>
+<h3 id="1단계--astro-프로젝트-초기화-레이아웃과-디자인-토큰">1단계 — Astro 프로젝트 초기화, 레이아웃과 디자인 토큰</h3>
+<p><strong>결정</strong>
+Jekyll(GitHub Pages 기본) 대신 Astro로 정적 사이트를 구성하고, 기성 테마 없이 처음부터 디자인한다.</p>
+<p><strong>이유</strong></p>
+<ul>
+<li>메인 화면에 WebGL 셰이더를 직접 올릴 계획이다. Astro는 기본적으로 JS를 내보내지 않고 필요한 컴포넌트에만 스크립트를 붙일 수 있어서, 글 페이지는 가볍게 유지하면서 셰이더 페이지만 무겁게 만들 수 있다.</li>
+<li>콘텐츠 컬렉션에 스키마(zod)를 걸 수 있어서 Works / Blog / Devlog 를 타입이 있는 데이터로 관리할 수 있다.</li>
+<li>이미 설치된 Node 만으로 로컬 미리보기가 된다. Jekyll 은 Ruby 설치가 추가로 필요하다.</li>
+<li>테마(Chirpy, AstroPaper 등)는 문서형 디자인이 강해서 NPR / 수채화 콘셉트를 입히려면 결국 대부분을 뜯어고쳐야 한다.</li>
+</ul>
+<p><strong>구성</strong></p>
+<ul>
+<li>종이색 배경 + 잉크색 텍스트, 수채화 안료 4색(인디고·로즈·오커·새프그린)을 CSS 토큰으로 정의</li>
+<li>라이트 / 다크 테마: 시스템 설정을 따르되 토글로 강제 가능 (<code>data-theme</code>)</li>
+<li>페이지 전체에 SVG <code>feTurbulence</code> 로 만든 종이 그레인 오버레이</li>
+<li>공용 SVG 필터 <code>wc-bleed</code>: 노이즈 디스플레이스먼트 + 침식(erode)으로 테두리를 분리해 수채화 얼룩을 흉내</li>
+</ul>
+<p><strong>대안</strong></p>
+<ul>
+<li>Hugo: 빌드는 가장 빠르지만 Go 템플릿으로 인터랙티브 컴포넌트를 다루기 불편하다.</li>
+<li>Next.js: 블로그 용도로는 과하다. 정적 페이지가 기본인 Astro 가 목적에 더 맞다.</li>
+</ul>
+<h3 id="2단계--실시간-수채화-셰이더-히어로">2단계 — 실시간 수채화 셰이더 히어로</h3>
+<p><strong>결정</strong>
+메인 화면 배경을 이미지가 아니라 단일 패스 WebGL 프래그먼트 셰이더로 그린다. Three.js 없이 순수 WebGL 로 작성한다.</p>
+<p><strong>이유</strong></p>
+<ul>
+<li>내가 하는 일이 NPR 이다. 첫 화면 자체가 작업물이자 자기소개가 되도록 했다.</li>
+<li>상태를 저장하지 않는 단일 패스로 만들면 FBO 핑퐁 없이 어떤 해상도에서도 바로 재현되고, 코드가 짧아 설명하기 쉽다.</li>
+<li>풀스크린 삼각형 하나만 그리면 되므로 Three.js(약 600KB)는 과하다.</li>
+</ul>
+<p><strong>구현한 수채화 현상</strong></p>
+<table>
+<thead>
+<tr>
+<th>현상</th>
+<th>근사 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>번짐 형태</td>
+<td>도메인 워핑 fBm (q → r → d 2단 워프)</td>
+</tr>
+<tr>
+<td>엣지 다크닝</td>
+<td>임계값 바로 위의 얇은 띠를 따로 계산해 진하게 더함</td>
+</tr>
+<tr>
+<td>안료 불균일</td>
+<td>저주파 노이즈(flow)로 내부 농도를 흔듦</td>
+</tr>
+<tr>
+<td>그래뉼레이션</td>
+<td>종이 높이 노이즈로 안료 농도를 변조</td>
+</tr>
+<tr>
+<td>글레이징</td>
+<td>레이어를 투과색으로 보고 곱함 (감산 혼합)</td>
+</tr>
+<tr>
+<td>종이</td>
+<td>콜드프레스 결 + 섬유 + 높이 그라디언트로 엠보스</td>
+</tr>
+<tr>
+<td>젖은 붓</td>
+<td>포인터 궤적 32점을 유니폼으로 넘겨 번짐 + 테두리</td>
+</tr>
+</tbody>
+</table>
+<p><strong>튜닝 기록</strong>
+첫 버전은 워프 강도(3.0 / 2.4)와 그레인 주파수(px/3.5)가 높아서 종이가 찢어진 것처럼 보였다. 워프를 1.8 / 1.6 으로, 그레인을 px/7 로, 그래뉼레이션 폭을 0.7–1.3 에서 0.82–1.18 로 낮췄다. 내부는 연하고 가장자리만 진한 수채화다운 형태가 나왔다.</p>
+<p><strong>성능과 접근성</strong></p>
+<ul>
+<li>DPR 상한 1.5, 화면 밖(IntersectionObserver)이거나 탭이 숨겨지면 렌더링 중단</li>
+<li><code>prefers-reduced-motion</code> 이면 애니메이션 없이 정지된 그림 한 장만 그림</li>
+<li>WebGL 을 쓸 수 없으면 CSS radial-gradient 로 대체</li>
+</ul>
+<p><strong>대안</strong></p>
+<ul>
+<li>이전 프레임을 누적하는 wet-in-wet 시뮬레이션: 더 사실적이지만 상태 관리가 필요하다. 다음 단계 연구 주제로 남긴다.</li>
+</ul>
+<h3 id="3단계--포트폴리오--블로그-콘텐츠-구조">3단계 — 포트폴리오 · 블로그 콘텐츠 구조</h3>
+<p><strong>결정</strong>
+Works(포트폴리오)와 Blog(연구 노트)를 별도 컬렉션으로 나누고, 둘 다 마크다운 파일 하나가 글 하나가 되도록 한다.</p>
+<p><strong>이유</strong></p>
+<ul>
+<li>Works 는 결과물(영상, 브레이크다운) 중심이고 Blog 는 과정과 원리 중심이다. 보여주는 방식이 다르니 스키마도 나눴다. Works 에는 <code>tools</code>, <code>cover</code>, <code>featured</code> 가 있다.</li>
+<li>커버 이미지가 없는 작업도 카드가 비어 보이지 않도록, 작업 id 를 시드로 쓰는 수채화 얼룩 SVG 를 자동으로 그린다.</li>
+<li>글 본문의 코드 블록은 1단계에서 설정한 Shiki 듀얼 테마(rose-pine-dawn / rose-pine-moon)를 따라 사이트 테마와 함께 바뀐다.</li>
+<li>블로그 목록은 태그 필터를 클라이언트에서 처리한다. 글 수가 적을 때는 서버 라우팅보다 단순하다.</li>
+</ul>
+<p><strong>정리</strong>
+구조를 잡으려고 넣었던 예시 작업 2개(툰 셰이더, 잉크 라인)는 실제 작업이 아니라서 뺐다. Works 에는 실제로 만든 것만 올린다.</p>
+<h3 id="4단계--devlog-섹션">4단계 — Devlog 섹션</h3>
+<p><strong>결정</strong>
+작업 일지를 블로그 글과 분리된 Devlog 섹션으로 두고, <strong>하루에 파일 하나, 커밋마다 섹션 하나</strong>로 기록한다. 각 섹션은 <code>결정 / 이유 / 대안</code> 형식으로 쓴다.</p>
+<p><strong>이유</strong></p>
+<ul>
+<li>블로그 글은 완성된 설명이고, Devlog 는 진행 중인 판단의 기록이다. 섞으면 둘 다 읽기 어려워진다.</li>
+<li>커밋 메시지는 무엇을 바꿨는지만 담기에도 짧다. 왜 그렇게 했는지, 무엇을 버렸는지는 따로 남겨야 나중에 다시 판단할 때 근거가 된다.</li>
+<li>기록을 해당 커밋과 같은 커밋에 넣는다. 그러면 git 기록에서 코드 변경과 그 이유가 항상 함께 움직인다.</li>
+<li>상세 페이지는 <code>## 커밋</code> 제목을 읽어 목차를 자동으로 만들고, 목록에는 하루 커밋 수를 표시한다.</li>
+</ul>
+<p><strong>대안</strong></p>
+<ul>
+<li>GitHub 커밋 메시지 본문에만 쓰는 방법: 따로 관리할 것이 없지만 사이트에서 읽기 어렵고 표나 코드를 넣기 불편하다.</li>
+<li>커밋 하나에 글 하나: 하루 작업의 흐름이 잘게 쪼개져서 맥락이 끊긴다.</li>
+</ul>
+<h3 id="5단계--github-actions-배포-줄바꿈-통일">5단계 — GitHub Actions 배포, 줄바꿈 통일</h3>
+<p><strong>결정</strong>
+<code>main</code> 에 push 하면 GitHub Actions 가 빌드해서 GitHub Pages 로 배포한다. 저장소의 줄바꿈은 LF 로 통일한다.</p>
+<p><strong>이유</strong></p>
+<ul>
+<li>빌드 결과물(<code>dist/</code>)을 저장소에 올리지 않아도 된다. 기록에는 소스와 결정만 남는다.</li>
+<li>공식 <code>withastro/action</code> 이 패키지 매니저 감지, 캐시, Pages 아티팩트 업로드까지 처리한다.</li>
+<li>Windows 에서 작업하고 Linux 러너에서 빌드하므로, <code>.gitattributes</code> 로 LF 를 고정해 줄바꿈 차이로 생기는 불필요한 diff 를 막는다.</li>
+</ul>
+<p><strong>대안</strong></p>
+<ul>
+<li><code>gh-pages</code> 브랜치에 빌드 결과를 커밋: 설정은 익숙하지만 결과물 커밋이 기록을 어지럽힌다.</li>
+</ul>
+<h2 id="커밋-2--소스-비공개-결과물만-공개-배포">커밋 2 — 소스 비공개, 결과물만 공개 배포</h2>
+<p><strong>결정</strong>
+블로그 소스를 비공개 저장소로 옮기고, 빌드한 결과물만 공개 저장소 <code>daehyeon0731.github.io</code> 의 <code>gh-pages</code> 브랜치로 배포한다.</p>
+<p><strong>이유</strong></p>
+<ul>
+<li>개인 블로그다. 글과 사이트는 공개하되, 사이트를 만드는 원본 코드와 작업 기록까지 공개할 이유는 없다.</li>
+<li>GitHub Pages 의 사용자 사이트 주소(<code>github.io</code>)를 그대로 쓰면서 무료 플랜에서 할 수 있는 방법이다.</li>
+<li>배포 인증은 공개 저장소 하나에만 쓰기 권한이 있는 Deploy key 로 한다. 계정 전체 권한이 걸리는 개인 토큰보다 유출됐을 때 피해 범위가 작다.</li>
+<li><code>force_orphan</code> 으로 배포할 때마다 커밋 하나로 덮어쓴다. 공개 쪽에는 배포 기록이 쌓이지 않는다.</li>
+</ul>
+<p><strong>한계</strong>
+브라우저에서 실행되는 코드(수채화 셰이더 등)는 방문자가 내려받아야 실행되므로, 압축은 되어도 완전히 숨길 수는 없다. 숨겨지는 것은 원본 소스와 기록이다.</p>
+<p><strong>대안</strong></p>
+<ul>
+<li>GitHub Pro 로 비공개 저장소에서 바로 Pages: 저장소 하나로 끝나지만 유료이고, 플랜이 끝나면 사이트도 멈춘다.</li>
+<li>Cloudflare Pages / Netlify: 비공개 저장소를 바로 연결할 수 있지만 <code>github.io</code> 주소를 쓸 수 없다.</li>
+</ul>
+</div></div></article></main><footer class="site-footer" data-astro-cid-hkbrpulz><div class="container" data-astro-cid-hkbrpulz><span data-astro-cid-hkbrpulz>© 2026 Daehyeon</span><span class="sep" data-astro-cid-hkbrpulz>·</span><a href="https://github.com/daehyeon0731" data-astro-cid-hkbrpulz>GitHub</a></div></footer><script type="module">document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let e=document.documentElement,t=(e.dataset.theme??(matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`))===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>
